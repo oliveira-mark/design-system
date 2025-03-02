@@ -1,0 +1,50 @@
+:root {
+  --base-100: #f2f4f7;
+  --base-200: #e4e7ec;
+  --base-300: #ced2da;
+  --base-400: #97a1af;
+  --base-500: #637083;
+  --base-600: #414e62;
+  --base-700: #344051;
+  --base-800: #1a232d;
+  --base-900: #141c25;
+
+  --radius-none: 0;
+  --radius-xxxs: 2px;
+  --radius-xxs: 4px;
+  --radius-xs: 6px;
+  --radius-s: 8px;
+  --radius-m: 10px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+  --radius-xxl: 20px;
+  --radius-xxxl: 32px;
+  --radius-xxxxl: 48px;
+  --radius-max: 999px;
+
+  --shadow-xs: ;
+  --shadow-s: ;
+  --shadow-m: ;
+  --shadow-l: ;
+  --shadow-xl: ;
+  --shadow-xxl: ;
+
+  --padding-none: 0;
+  --padding-2: 2px;
+  --padding-4: 4px;
+  --padding-6: 6px;
+  --padding-8: 8px;
+  --padding-10: 10px;
+  --padding-12: 12px;
+  --padding-16: 16px;
+  --padding-20: 20px;
+  --padding-24: 24px;
+  --padding-28: 28px;
+  --padding-32: 32px;
+  --padding-40: 40px;
+  --padding-48: 48px;
+  --padding-64: 64px;
+  --padding-80: 80px;
+
+  font-family: "Inter", serif;
+}

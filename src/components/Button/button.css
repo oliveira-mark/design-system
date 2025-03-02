@@ -1,0 +1,67 @@
+button {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px 4px rgba(0, 123, 255, 0.7);
+  }
+  &:active {
+    outline: 1px var(--base-200) solid;
+    transform: scale(0.98);
+  }
+  &:disabled {
+    cursor: none;
+  }
+}
+.filled {
+  background-color: var(--base-900);
+  color: var(--base-100);
+  border: 1px var(--base-900) solid;
+}
+.light {
+  background-color: var(--base-200);
+  color: var(--base-600);
+  border: 1px var(--base-200) solid;
+}
+.outline {
+  background-color: transparent;
+  color: var(--base-600);
+  border: 1px var(--base-200) solid;
+}
+.ultra-small {
+  padding: var(--padding-6) var(--padding-12);
+  border-radius: var(--radius-s);
+  font-size: 0.85rem;
+}
+.extra-small {
+  padding: var(--padding-8) var(--padding-16);
+  border-radius: var(--radius-s);
+  font-size: 0.85rem;
+}
+.small {
+  padding: var(--padding-10) var(--padding-20);
+  border-radius: var(--radius-m);
+  font-size: 0.85rem;
+}
+.medium {
+  padding: var(--padding-10) var(--padding-20);
+  border-radius: var(--radius-m);
+  font-size: 1rem;
+}
+.large {
+  padding: var(--padding-12) var(--padding-24);
+  border-radius: var(--radius-l);
+  font-size: 1rem;
+}
+.extra-large {
+  padding: var(--padding-16) var(--padding-28);
+  border-radius: var(--radius-l);
+  font-size: 1rem;
+}
