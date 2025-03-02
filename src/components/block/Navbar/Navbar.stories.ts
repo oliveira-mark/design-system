@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 
-import { Header } from "./Header";
+import { Navbar } from "./Navbar";
 
 const meta = {
-  title: "Components/Header",
-  component: Header,
+  title: "Components/Block/Navbar",
+  component: Navbar,
   tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
@@ -14,8 +14,13 @@ const meta = {
     onLogin: fn(),
     onLogout: fn(),
     onCreateAccount: fn(),
+    links: [
+      { active: true, label: "Home", url: "#" },
+      { active: false, label: "About", url: "#" },
+      { active: false, label: "Contact", url: "#" },
+    ],
   },
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Navbar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
