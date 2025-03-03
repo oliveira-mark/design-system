@@ -21,7 +21,7 @@ export const Input = ({
   const [classStatus, setClassStatus] = useState<string>("");
 
   useEffect(() => {
-    handleMensage();
+    setClassStatus(getClassCode(statusCode || 0));
   }, [statusCode]);
 
   const getClassCode = (code: number) => {
@@ -29,10 +29,6 @@ export const Input = ({
     if (code >= 400 && code < 500) return "error";
     if (code >= 500) return "server-error";
     return "";
-  };
-
-  const handleMensage = () => {
-    setClassStatus(getClassCode(statusCode || 0));
   };
 
   return (
