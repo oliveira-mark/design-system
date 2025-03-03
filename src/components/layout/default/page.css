@@ -65,3 +65,7 @@
 .storybook-page .tip-wrapper svg path {
   fill: #1ea7fd;
 }
+
+h4 {
+  margin-bottom: 5px;
+}

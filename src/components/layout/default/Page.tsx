@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Navbar } from "../../block/Navbar/Navbar";
 import { Input } from "../../core/Input/Input";
+import { Dropdown } from "../../core/Dropdown/Dropdown";
 import "./Page.css";
 
 type User = {
@@ -10,6 +11,7 @@ type User = {
 
 export const Page: React.FC = () => {
   const [user, setUser] = React.useState<User>();
+  const [selectedValue, setSelectedValue] = useState<string | null>(null);
 
   return (
     <article>
@@ -38,12 +40,29 @@ export const Page: React.FC = () => {
           </a>{" "}
           process starting with atomic components and ending with pages.
         </p>
+
+        <h4>Input Example</h4>
         <Input
           type="text"
           placeholder="Search..."
           label="Search"
           sublabel="Search input example"
         />
+
+        <h4>Dropdown Example</h4>
+        <Dropdown
+          options={[
+            { value: "First Option", label: "First Option" },
+            { value: "Second Option", label: "Second Option" },
+            { value: "Third Option", label: "Third Option" },
+            { value: "Fourth Option", label: "Fourth Option" },
+            { value: "Fifth Option", label: "Fifth Option" },
+          ]}
+          placeholder="Select an option"
+          onSelect={setSelectedValue}
+        />
+        {selectedValue && <p>Selected: {selectedValue}</p>}
+
         <p>
           Render pages with mock data. This makes it easy to build and review
           page states without needing to navigate to them in your app. Here are
