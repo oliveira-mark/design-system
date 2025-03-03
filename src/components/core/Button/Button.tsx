@@ -1,4 +1,4 @@
-import "./button.css";
+import "./Button.css";
 
 export interface ButtonProps {
   primary: "filled" | "light" | "outline";

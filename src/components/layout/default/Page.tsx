@@ -1,7 +1,8 @@
 import React from "react";
 
 import { Navbar } from "../../block/Navbar/Navbar";
-import "./page.css";
+import { Input } from "../../core/Input/Input";
+import "./Page.css";
 
 type User = {
   name: string;
@@ -37,6 +38,12 @@ export const Page: React.FC = () => {
           </a>{" "}
           process starting with atomic components and ending with pages.
         </p>
+        <Input
+          type="text"
+          placeholder="Search..."
+          label="Search"
+          sublabel="Search input example"
+        />
         <p>
           Render pages with mock data. This makes it easy to build and review
           page states without needing to navigate to them in your app. Here are
@@ -52,6 +59,7 @@ export const Page: React.FC = () => {
             these services out using Storybook.
           </li>
         </ul>
+
         <p>
           Get a guided tutorial on component-driven development at{" "}
           <a

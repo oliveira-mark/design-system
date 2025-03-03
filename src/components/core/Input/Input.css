@@ -1,0 +1,109 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  &.error {
+    input {
+      border: 1px solid rgb(255, 180, 180);
+    }
+    .input-sublabel {
+      color: rgb(255, 100, 100);
+    }
+  }
+
+  &.success {
+    input {
+      border: 1px solid rgb(175, 250, 175);
+    }
+    .input-sublabel {
+      color: rgb(30, 180, 30);
+    }
+  }
+
+  &.server-error {
+    input {
+      background-color: var(--base-100);
+      color: var(--base-400);
+      pointer-events: none;
+
+      &::placeholder {
+        color: var(--base-400);
+      }
+    }
+
+    label {
+      line-height: 1;
+
+      &.input-label {
+        color: var(--base-400);
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+      }
+
+      &.input-sublabel {
+        font-weight: 300;
+        font-size: 0.65rem;
+        color: var(--base-400);
+        margin-top: 5px;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  label {
+    line-height: 1;
+
+    &.input-label {
+      color: var(--base-800);
+      font-weight: 500;
+      font-size: 0.8rem;
+      margin-bottom: 5px;
+    }
+
+    &.input-sublabel {
+      font-weight: 300;
+      font-size: 0.65rem;
+      color: var(--base-400);
+      margin-top: 5px;
+      margin-left: 2px;
+    }
+  }
+
+  input {
+    color: var(--base-500);
+    padding: var(--padding-8) var(--padding-10) var(--padding-8)
+      var(--padding-10);
+    font-size: 0.85rem;
+    font-weight: 300;
+    border: 1px solid var(--base-100);
+    border-radius: var(--radius-s);
+    box-shadow: var(--shadow-button);
+    outline: none;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+
+    &:focus {
+      border-color: var(--base-300);
+    }
+
+    &::placeholder {
+      color: var(--base-500);
+      font-size: 0.85rem;
+      font-weight: 300;
+    }
+  }
+
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .success {
+    color: green;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}
